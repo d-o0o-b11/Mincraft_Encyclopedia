@@ -19,6 +19,7 @@ return(
         </div>
         <h3>원하는 항목을 클릭해주세요!</h3>
 
+<div className="test">
         <div className="option_box_right" onClick={nextpage}>
             <div className="boxframe">
                 <img src={Craftingtable} className="boximg"></img>
@@ -28,6 +29,7 @@ return(
                 <h6 style={{margin: " 10px 0px 0px 30px"}}>이거는 이거다</h6>
             </div>
         </div>
+</div>
 
         <div className="option_box_left">
             <div className="boxframe">
@@ -39,6 +41,7 @@ return(
             </div>
         </div>
         
+        <div className="test2">        
         <div className="option_box_right">
             <div className="boxframe">
                 <img src={Sheep} className="boximg"></img>
@@ -47,6 +50,7 @@ return(
                 <h5 style={{margin: " 0px 0px 0px 30px"}}>동물</h5>
                 <h6 style={{margin: " 10px 0px 0px 30px"}}>이거는 이거다</h6>
             </div>
+        </div>
         </div>
 
     </div>

@@ -37,13 +37,24 @@
 
     /* grid-template-columns: repeat(3, 1fr); */
     /* grid 3번 1fr 반복할 것 */
-    background-color: #AFD485;
+    /* background-color: #AFD485; */
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     padding: 20px 10px;
     animation: slowAppear 1s;
 
     cursor: pointer;
+}
+
+/* :nth-child()를 사용하여 배경색 다르게 하기!!
+장점: 같은 코드 반복해서 사용하지 않아도 됨 */
+.test :nth-child(1){
+    background-color: #AFD485;
+    
+}
+
+.test2 :nth-child(1){
+    background-color: #DDECCA;
 }
 
 .option_box_left{
@@ -71,6 +82,7 @@
     /* margin: 100px 10px 50px 40px;  */
     /* 위쪽 오른쪽 아래쪽 왼쪽 */
     position: relative;
+    margin-left: 10px;
 }
 
 .boximg{
