@@ -2,6 +2,7 @@ import React from "react"
 import { Mobile, PC } from "./MediaQuery/MediaQuery.js"
 import Main from "./Mainpage/Main"
 import Option from "./Option/Option"
+import Craftingtable from "./Craftingtable/Craftingtable"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () =>{
@@ -15,6 +16,7 @@ const App = () =>{
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/option" element={<Option/>}/>
+        <Route path="/Craftingtable" element={<Craftingtable/>}/>
       </Routes>
 
 

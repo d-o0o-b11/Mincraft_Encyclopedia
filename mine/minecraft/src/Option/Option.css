@@ -11,12 +11,52 @@
     margin-top: 30px;
 }
 
-.option_box{
-    margin: 100px 10px 50px 40px; 
+
+/* 위에서 아래로 내려오며 투명했다가 나타나는 애니메이션 */
+@keyframes slowAppear {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.option_box_right{
+    margin: 80px 0px 40px 70px; 
+    /* 위쪽 오른쪽 아래쪽 왼쪽 */
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 100px 100px; */
+    /* grid 열로 -px *(갯수) */
+    grid-template-columns: 0.1fr;
+    /* grid 화면 꽉채워서 열을 나열할것이다 fr사용 */
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid 3번 1fr 반복할 것 */
+    background-color: #AFD485;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 20px 10px;
+    animation: slowAppear 1s;
+
+    cursor: pointer;
+}
+
+.option_box_left{
+    margin: 80px 70px 40px 0px; 
     /* 위쪽 오른쪽 아래쪽 왼쪽 */
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 0.1fr;
+    background-color: #7DB249;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 20px 10px;
+    animation: slowAppear 1s;
 }
 
 .add_explanation{
@@ -35,7 +75,7 @@
 
 .boximg{
     position: absolute;
-    left: 0;
+    left: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
