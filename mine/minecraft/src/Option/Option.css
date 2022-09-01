@@ -48,12 +48,12 @@
 
 /* :nth-child()를 사용하여 배경색 다르게 하기!!
 장점: 같은 코드 반복해서 사용하지 않아도 됨 */
-.test :nth-child(1){
+.full_frame :nth-child(1){
     background-color: #AFD485;
     
 }
 
-.test2 :nth-child(1){
+.full_frame2 :nth-child(1){
     background-color: #DDECCA;
 }
 
