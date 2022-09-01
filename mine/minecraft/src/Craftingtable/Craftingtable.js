@@ -9,16 +9,16 @@ import styled from 'styled-components';
 
 const Craftingtable = () =>{
 
-    let [check,SetCheck] = useState("");
+    const [check,SetCheck] = useState();
 
     const handleClickButton = e =>{
-        const {name} = e.target;
+        const name = e.target.name;
         SetCheck(name);
     }
 
     const selectComponent = {
-        first : <Clothes/>,
-        second : <Weapon/>,
+        first : <Weapon/>,
+        second : <Clothes/>,
         third : <Etc/>,
     }
 
@@ -39,13 +39,13 @@ const Craftingtable = () =>{
 
            
             {/* <hr style={{width:"100%", backgroundColor:"red"}}></hr> */}
-            <h5 onClick={handleClickButton} name={'first'}>무기</h5>
-            <h5 onClick={handleClickButton} name={'second'}>옷</h5>
-            <h5 onClick={handleClickButton} name={'third'}>기타</h5>
+            <button onClick={handleClickButton} name='first' key='first'>무기</button>
+            <button onClick={handleClickButton} name='second' key='second'>옷</button>
+            <button onClick={handleClickButton} name='third' key='third'>기타</button>
             
 
            
-            {check && <Content>{selectComponent.check}</Content>}
+            {check && <>{selectComponent[check]}</> }
 
             
         
