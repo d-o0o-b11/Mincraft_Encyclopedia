@@ -39,14 +39,19 @@ const Craftingtable = () =>{
 
            
             {/* <hr style={{width:"100%", backgroundColor:"red"}}></hr> */}
-            <button onClick={handleClickButton} name='first' key='first' className="button_option"><h3>무기</h3></button>
-            <button onClick={handleClickButton} name='second' key='second' className="button_option"><h3>옷</h3></button>
-            <button onClick={handleClickButton} name='third' key='third' className="button_option"><h3>기타</h3></button>
-            
+            <div className="btn_center">
+                <button onClick={handleClickButton} name='first' key='first' className="button_option"><h3>무기</h3></button>
+                <button onClick={handleClickButton} name='second' key='second' className="button_option"><h3>옷</h3></button>
+                <button onClick={handleClickButton} name='third' key='third' className="button_option"><h3>기타</h3></button>
+            </div>
 
-            <div className="test"></div>
+            <div className="wrapline">
+                <div className="line">
+                    {check && <>{selectComponent[check]}</> }
+
+                </div>
+            </div>
            
-            {check && <>{selectComponent[check]}</> }
 
             
         
