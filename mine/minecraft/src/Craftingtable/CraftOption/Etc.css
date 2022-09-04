@@ -1,38 +1,20 @@
-#frame{
-    width:300px;
-    height: 450px;
-    transition: transform 200ms;
+.container{
+    width: 300vw;
+    /* transform: translate(-100vw); */
+    /* x축 -100vw 이동 */
+    transition: transform 0.5s;
+    /* transform == 서서히 변경 */
 }
 
-#frame :hover{
-    transform: scale3d(1.05, 1.05, 1.05);
+.inner{
+    width: 100vw;
+    float: left;
 }
 
-.wrap_frame{
-    display: flex;
-    justify-content: center;
-}
-
-#card{
+.inner img{
     width: 100%;
-    height: 100%;
-    border-radius: 9px;
-    background-color: lightpink;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
-    position: relative;
-    transition-duration: 250ms;
-    transition-property: transform, box-shadow ;
-    transition-timing-function: ease-out;
-
-    margin: 10px 0px;
 }
 
-/* #light{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-} */
-
+.noneScroll{
+    overflow: hidden;
+}

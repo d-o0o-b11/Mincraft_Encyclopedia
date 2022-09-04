@@ -1,64 +1,80 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./Etc.css"
-import test from "../../images/craft/stick.jpg"
+import test from "../../images/logo.png"
+import test1 from "../../images/sheep.png"
+import test2 from "../../images/monster.jpg"
 
 
 
 const Etc = () =>{
 
-    // useEffect 사용한 이유:
-    // 화면이 렌더링 되기 전에 실행을 할 경우엔 frame 변수 값이 null로 받아온다.
-    // 그래서 화면을 먼저 렌더링 후 값을 받아오는 것으로 순서를 바꿨다.
+    // let [count, SetCount] = useState(0)
+
+    // useEffect(()=>{
+    //     document.querySelector('.btn2').addEventListener('click', function(){
+    //         document.querySelector('.container').style.transform = 'translateX(-' + count * 100 + 'vw)'
+    //     })
+
+    //     document.querySelector('.btn1').addEventListener('click', function(){
+    //         document.querySelector('.container').style.transform = 'translateX(' + count * 100 + 'vw)'
+    //     })
+
+    //     console.log(count*100);
+    // })
 
     useEffect(()=>{
-        const frame = document.getElementById('frame')
-        const card = document.getElementById('card')
-        const light = document.getElementById('light')
-    
-        let {x, y, width, height} = frame.getBoundingClientRect()
-    
-        function mouseMove (e){
-            const left = e.clientX - x 
-            const top = e.clientY - y
-            const centerX = left - width/2
-            const centerY = top - height/2
-            const d = Math.sqrt(centerX**2 + centerY**2) 
-    
-            card.style.transform =`
-                rotate3d(
-                    ${-centerY / 100}, ${centerX / 100}, 0, ${d / 10}deg
-                )
-            `    
+        const nextBtn = document.querySelector('.next-btn');
+        const container = document.querySelector('.container');
+        const prevBtn = document.querySelector('.prev-btn');
+        const slideLength = document.querySelectorAll('.inner img').length;
 
-            // light.style.backgroundImage =`
-            //     radial-gradient(
-            //         circle at ${left}px ${top}px, #0000010, #ffffff00, #ffffff70)
-            //     )
-            // `  
+        let currentSlide = 1;
+        const IMAGE_WIDTH = 100;
+
+        //next btn
+        nextBtn.addEventListener('click', next);
+
+        function next(){
+            console.log(currentSlide);
+            if (currentSlide >= slideLength) {
+                currentSlide = 0;
+              }
+            container.style.transform = `translateX(-${IMAGE_WIDTH * currentSlide}vw)`;
+            currentSlide++;
         }
-    
-        frame.addEventListener('mouseenter', ()=>{
-            frame.addEventListener('mousemove',mouseMove)
-        })
-    
-        frame.addEventListener('mouseleave',()=>{
-            frame.removeEventListener('mousemove',mouseMove)
-        })
-    })
 
+        //prev-btn
+        prevBtn.addEventListener('click', prev);
+        function prev() {
+            if (currentSlide === 1) {
+                currentSlide = slideLength;
+            } else {
+                currentSlide--;
+            }
+            container.style.transform = `translateX(-${IMAGE_WIDTH * (currentSlide - 1)}vw)`;
+        }
+    })
+    
     return(
         <>
-        <div className="wrap_frame">
-            <div id="frame">
-                <div id="card">
-                    <div style={{textAlign:"center"}}>
-                        <img src={test} style={{width:"100px", height:"100px"}}/>
-                    </div>
+        <div className="noneScroll">  
+            <div className="container">
+                <div className="inner">
+                    <img src={test}/>
+                </div>
+                <div className="inner">
+                    <img src={test1}/>
+                </div>
+                <div className="inner">
+                    <img src={test2}/>
                 </div>
             </div>
-        </div> 
-            
+        </div>
+
+        <button className="prev-btn">prev</button>
+        <button className="next-btn">next</button>
         </>
+        
     )
 
 
