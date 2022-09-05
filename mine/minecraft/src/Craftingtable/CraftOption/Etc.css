@@ -13,10 +13,9 @@
 }
 
 .frame{
-    /* width:300px; */
-    width: 100vw;
+    width:300px;
+    /* width: 100vw; */
     height: 450px;
-    
     
 }
 
@@ -25,9 +24,6 @@
     /* justify-content: center; */
 }
 
-.test{
-    justify-content: center;
-}
 
 .card{
     width: 100%;
@@ -43,6 +39,7 @@
     transition-timing-function: ease-out;
 
     margin: 10px 0px;
+
 }
 
 .inner img{
@@ -51,4 +48,32 @@
 
 .noneScroll{
     overflow: hidden;
+}
+
+
+.slide_wrapper{
+    /* 보이는 화면 960px까지만 나머지는 hidden */
+    position: relative;
+    /* width: 960px; */
+    width: 350px;
+    margin: 0 auto;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slides{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 2610px;
+}
+
+/* .frame:not(:last-child){
+    float: left;
+    margin-right: 30px;
+    
+} */
+
+.frame:not(:first-child){
+    margin-left: 50px; 
 }
