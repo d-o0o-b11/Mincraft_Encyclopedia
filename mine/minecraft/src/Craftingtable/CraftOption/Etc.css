@@ -1,5 +1,6 @@
 .container{
     width: 300vw;
+    /* width: 400px; */
     /* transform: translate(-100vw); */
     /* x축 -100vw 이동 */
     transition: transform 0.5s;
@@ -9,6 +10,39 @@
 .inner{
     width: 100vw;
     float: left;
+}
+
+.frame{
+    /* width:300px; */
+    width: 100vw;
+    height: 450px;
+    
+    
+}
+
+.wrap_frame{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.test{
+    justify-content: center;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    background-color: lightpink;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: transform, box-shadow ;
+    transition-timing-function: ease-out;
+
+    margin: 10px 0px;
 }
 
 .inner img{

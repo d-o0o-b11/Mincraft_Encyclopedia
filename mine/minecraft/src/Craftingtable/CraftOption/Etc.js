@@ -24,12 +24,13 @@ const Etc = () =>{
 
     useEffect(()=>{
         const nextBtn = document.querySelector('.next-btn');
-        const container = document.querySelector('.container');
+        const container = document.querySelector('.wrap_frame');
         const prevBtn = document.querySelector('.prev-btn');
-        const slideLength = document.querySelectorAll('.inner img').length;
+        const slideLength = document.querySelectorAll('.card').length;
 
         let currentSlide = 1;
         const IMAGE_WIDTH = 100;
+        // 100
 
         //next btn
         nextBtn.addEventListener('click', next);
@@ -57,22 +58,34 @@ const Etc = () =>{
     
     return(
         <>
-        <div className="noneScroll">  
-            <div className="container">
-                <div className="inner">
-                    <img src={test}/>
-                </div>
-                <div className="inner">
-                    <img src={test1}/>
-                </div>
-                <div className="inner">
-                    <img src={test2}/>
+        <div >
+            <div className="container"> 
+                <div className="wrap_frame">
+                    <div className="test">
+                    <div className="frame"> 
+                        <div className="card">
+                            <h1>1</h1>
+                        </div>
+                    </div> </div>
+                        
+                    
+                    <div className="frame">
+                        <div className="card">
+                        <h1>2</h1>
+                        </div>
+                    </div>
+
+                    <div className="frame">
+                        <div className="card">
+                        <h1>3</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <button className="prev-btn">prev</button>
-        <button className="next-btn">next</button>
+        <button className="prev-btn" style={{height:"100px"}}>prev</button>
+        <button className="next-btn" style={{height:"100px"}}>next</button>
         </>
         
     )
