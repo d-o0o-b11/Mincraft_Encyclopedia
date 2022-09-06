@@ -3,6 +3,8 @@ import "./Etc.css"
 import test from "../../images/logo.png"
 import test1 from "../../images/sheep.png"
 import test2 from "../../images/monster.jpg"
+import { ArrowLeftCircle, ArrowRightCircle} from 'react-bootstrap-icons'
+
 
 
 
@@ -99,8 +101,11 @@ const Etc = () =>{
                 </div>
             </div>
 
-        <button className="prev-btn" style={{height:"100px"}}>prev</button>
-        <button className="next-btn" style={{height:"100px"}}>next</button>
+        <div className="subbtn_center">
+        
+            <button className="prev-btn"><ArrowLeftCircle/></button>
+            <button className="next-btn"><ArrowRightCircle/></button>
+        </div>
         </>
         
     )

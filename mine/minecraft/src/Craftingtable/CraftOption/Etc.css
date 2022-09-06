@@ -16,7 +16,7 @@
     width:300px;
     /* width: 100vw; */
     height: 450px;
-    
+    /* margin-left: 50px;  */
 }
 
 .wrap_frame{
@@ -57,7 +57,7 @@
     /* width: 960px; */
     width: 350px;
     margin: 0 auto;
-    height: 450px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -76,4 +76,20 @@
 
 .frame:not(:first-child){
     margin-left: 50px; 
+}
+
+.subbtn_center{
+    text-align: center;
+}
+
+.subbtn_center button{
+    padding: 10px 10px;
+}
+
+.subbtn_center button:nth-child(1){
+    margin-right: 50px;
+}
+
+.subbtn_center button:nth-child(2){
+    margin-left: 50px;
 }
