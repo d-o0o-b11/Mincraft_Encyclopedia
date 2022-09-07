@@ -4,6 +4,7 @@ import test from "../../images/logo.png"
 import test1 from "../../images/sheep.png"
 import test2 from "../../images/monster.jpg"
 import { ArrowLeftCircle, ArrowRightCircle} from 'react-bootstrap-icons'
+import ingredient from "../../DB/data.json"
 
 
 
@@ -60,6 +61,7 @@ const Etc = () =>{
         }
     })
     
+    
     return(
         <>
             <div className="slide_wrapper "> 
@@ -106,6 +108,14 @@ const Etc = () =>{
             <button className="prev-btn"><ArrowLeftCircle/></button>
             <button className="next-btn"><ArrowRightCircle/></button>
         </div>
+
+        {ingredient.Etc.map(etc =>(
+            <div key={etc.id}>
+            <img src={process.env.PUBLIC_URL + etc.imgname}/>
+            <h6>{etc.explanation}</h6>
+            </div>
+        ))}
+
         </>
         
     )

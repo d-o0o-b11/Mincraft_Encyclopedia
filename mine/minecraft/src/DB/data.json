@@ -1,0 +1,14 @@
+{
+    "Etc": [
+        {
+            "id": 1,
+            "imgname": "img/stick.jpg",
+            "explanation": "스틱입니다"
+        },
+        {
+            "id": 2,
+            "imgname": "img/sheep.png", 
+            "explanation": "체크체크"
+        }
+    ]
+}
