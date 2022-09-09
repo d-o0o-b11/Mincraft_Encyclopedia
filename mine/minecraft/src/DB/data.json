@@ -2,12 +2,17 @@
     "Etc": [
         {
             "id": 1,
-            "imgname": "img/stick.jpg",
+            "imgname": "img/craft/stick.jpg",
             "explanation": "스틱입니다"
         },
         {
             "id": 2,
-            "imgname": "img/sheep.png", 
+            "imgname": "img/craft/torchlight.jpg", 
+            "explanation": "체크체크"
+        },
+        {
+            "id": 3,
+            "imgname": "img/craft/unionstand.jpg", 
             "explanation": "체크체크"
         }
     ]

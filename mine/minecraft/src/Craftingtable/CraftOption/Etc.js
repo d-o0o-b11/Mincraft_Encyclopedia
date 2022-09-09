@@ -67,7 +67,8 @@ const Etc = () =>{
             <div className="slide_wrapper "> 
                 <div className="slides">
                     <div className="wrap_frame">
-                        <div className="frame"> 
+
+                        {/* <div className="frame"> 
                             <div className="card">
                                 <h1>1</h1>
                             </div>
@@ -97,7 +98,18 @@ const Etc = () =>{
                             <div className="card">
                             <h1>5</h1>
                             </div>
-                        </div>
+                        </div> */}
+
+                        {ingredient.Etc.map(etc =>(
+                            <div className="frame">
+                                <div className="card">
+                                    <div key={etc.id} className="img_center">
+                                        <img src={process.env.PUBLIC_URL + etc.imgname} className="img_center"/>
+                                        <h6>{etc.explanation}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
 
                     </div>
                 </div>
@@ -109,12 +121,12 @@ const Etc = () =>{
             <button className="next-btn"><ArrowRightCircle/></button>
         </div>
 
-        {ingredient.Etc.map(etc =>(
+        {/* {ingredient.Etc.map(etc =>(
             <div key={etc.id}>
             <img src={process.env.PUBLIC_URL + etc.imgname}/>
             <h6>{etc.explanation}</h6>
             </div>
-        ))}
+        ))} */}
 
         </>
         

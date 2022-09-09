@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     border-radius: 9px;
-    background-color: lightpink;
+    background-color: #C6C6C6;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
@@ -92,4 +92,14 @@
 
 .subbtn_center button:nth-child(2){
     margin-left: 50px;
+}
+
+.img_center{
+    text-align: center;
+}
+
+.img_center img{
+    margin-top: 100px;
+    width: 100%;
+    height: 180px;
 }
