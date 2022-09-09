@@ -68,38 +68,6 @@ const Etc = () =>{
                 <div className="slides">
                     <div className="wrap_frame">
 
-                        {/* <div className="frame"> 
-                            <div className="card">
-                                <h1>1</h1>
-                            </div>
-                            
-                        </div> 
-                            
-                        
-                        <div className="frame">
-                            <div className="card">
-                            <h1>2</h1>
-                            </div>
-                        </div>
-
-                        <div className="frame">
-                            <div className="card">
-                            <h1>3</h1>
-                            </div>
-                        </div>
-
-                        <div className="frame">
-                            <div className="card">
-                            <h1>4</h1>
-                            </div>
-                        </div>
-
-                        <div className="frame">
-                            <div className="card">
-                            <h1>5</h1>
-                            </div>
-                        </div> */}
-
                         {ingredient.Etc.map(etc =>(
                             <div className="frame">
                                 <div className="card">

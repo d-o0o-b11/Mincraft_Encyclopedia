@@ -55,7 +55,7 @@
     /* 보이는 화면 960px까지만 나머지는 hidden */
     position: relative;
     /* width: 960px; */
-    width: 350px;
+    width: 340px;
     margin: 0 auto;
     height: 500px;
     overflow: hidden;
@@ -66,6 +66,7 @@
     left:0;
     top: 0;
     width: 2610px;
+    transition: transform 0.5s;
 }
 
 /* .frame:not(:last-child){
