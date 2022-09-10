@@ -1,8 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "./Etc.css"
-import test from "../../images/logo.png"
-import test1 from "../../images/sheep.png"
-import test2 from "../../images/monster.jpg"
+import "./Option.css"
 import { ArrowLeftCircle, ArrowRightCircle} from 'react-bootstrap-icons'
 import ingredient from "../../DB/data.json"
 
@@ -73,6 +70,7 @@ const Etc = () =>{
                                 <div className="card">
                                     <div key={etc.id} className="img_center">
                                         <img src={process.env.PUBLIC_URL + etc.imgname} className="img_center"/>
+                                        <h4>{etc.title}</h4>
                                         <h6>{etc.explanation}</h6>
                                     </div>
                                 </div>
@@ -84,17 +82,9 @@ const Etc = () =>{
             </div>
 
         <div className="subbtn_center">
-        
             <button className="prev-btn"><ArrowLeftCircle/></button>
             <button className="next-btn"><ArrowRightCircle/></button>
         </div>
-
-        {/* {ingredient.Etc.map(etc =>(
-            <div key={etc.id}>
-            <img src={process.env.PUBLIC_URL + etc.imgname}/>
-            <h6>{etc.explanation}</h6>
-            </div>
-        ))} */}
 
         </>
         
