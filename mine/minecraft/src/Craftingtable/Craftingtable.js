@@ -61,8 +61,3 @@ const Craftingtable = () =>{
 
 export default Craftingtable;
 
-const Content = styled.div`
-  ${props => props.theme.flex('center', 'center')}
-  width: 100%;
-  height: 100%;
-`;

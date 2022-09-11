@@ -12,6 +12,10 @@ const nextpage = () =>{
     window.location.href="/Craftingtable"
 }
 
+const nextpage3 = () =>{
+    window.location.href = "/Animal"
+}
+
 return(
     <div className="option_body">
         <div className="logo_margin2">
@@ -42,7 +46,7 @@ return(
         </div>
         
         <div className="full_frame2">        
-            <div className="option_box_right">
+            <div className="option_box_right" onClick={nextpage3}>
                 <div className="boxframe">
                     <img src={Sheep} className="boximg"></img>
                 </div>
