@@ -43,13 +43,46 @@
 .moving {
     position:relative;
     width:100%;
-    height:500px;
-    background:url('../images/animalBackground.jpg') 0 center / 500px repeat-x;
+    height:700px;
+    background:url('../images/animalBackground.jpg') 0 center / 500px 700px repeat-x;
     animation: movebg 2s linear infinite;
     /* 2초동안 일정하게 무한반복 */
+    /* test.png */
 }
 
 @keyframes movebg {
     0% {background-position:0 center;}
     100% {background-position:-500px center;}
+}
+
+.moving_animal {
+    position:relative;
+    width:3500px;
+    height:300px;
+    animation: moveAn 2s linear infinite;
+    /* 2초동안 일정하게 무한반복 */
+    /* test.png */
+}
+
+
+@keyframes moveAn{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+
+.frame_ani{
+    width: 300px;
+    height: 500px;
+    background-color: darkviolet;
+    margin: 150px 100px 50px 100px;
+    float: left;
+}
+
+.animal_img{
+    width: 100%;
+    height: 300px;
 }

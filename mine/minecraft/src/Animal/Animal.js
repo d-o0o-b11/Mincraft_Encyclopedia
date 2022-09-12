@@ -1,6 +1,8 @@
 import React from "react";
 import ImgCrafttable from "../images/sheep.png"
 import "./Animal.css"
+import img1 from "../images/sheep.png"
+import animal from "../DB/animal.json"
 
 const Animal = () =>{
 
@@ -16,7 +18,15 @@ const Animal = () =>{
             </div>
 
             <div className="moving">
-                
+                <div className="moving_animal">
+                    {animal.Animal.map(ani =>(
+                        <div key={ani.id} className="frame_ani">
+                            <img src={process.env.PUBLIC_URL + ani.imgname} className="animal_img"/>
+                            <h4>{ani.title}</h4>
+                            <img src={process.env.PUBLIC_URL + ani.food}/>
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     )

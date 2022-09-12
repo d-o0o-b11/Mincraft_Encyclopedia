@@ -1,0 +1,46 @@
+{
+    "Animal" : [
+        {
+            "id": 1,
+            "imgname": "img/animal/sheep.png",
+            "title": "양",
+            "food": "img/animal_like/wheat.png"
+        },
+        {
+            "id": 2,
+            "imgname": "img/animal/cow.png",
+            "title": "소",
+            "food": "img/animal_like/wheat.png"
+        },
+        {
+            "id": 3,
+            "imgname": "img/animal/chicken.png",
+            "title": "닭",
+            "food": "img/animal_like/seed.png"
+        },
+        {
+            "id": 4,
+            "imgname": "img/animal/pig.png",
+            "title": "돼지",
+            "food": "img/animal_like/carrot.png"
+        },
+        {
+            "id": 5,
+            "imgname": "img/animal/wolf.png",
+            "title": "강아지",
+            "food": "img/animal_like/meat.png"
+        },
+        {
+            "id": 6,
+            "imgname": "img/animal/cat.png",
+            "title": "고양이",
+            "food": "img/animal_like/fish.png"
+        },
+        {
+            "id": 7,
+            "imgname": "img/animal/horse.png",
+            "title": "말",
+            "food": "img/animal_like/glodApple.png"
+        }
+    ]
+}
