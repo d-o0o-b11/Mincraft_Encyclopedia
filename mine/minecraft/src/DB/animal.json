@@ -4,43 +4,50 @@
             "id": 1,
             "imgname": "img/animal/sheep.png",
             "title": "양",
-            "food": "img/animal_like/wheat.png"
+            "food": "img/animal_like/wheat.png",
+            "explanation":"🍞밀을 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 2,
             "imgname": "img/animal/cow.png",
             "title": "소",
-            "food": "img/animal_like/wheat.png"
+            "food": "img/animal_like/wheat.png",
+            "explanation":"🍞밀을 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 3,
             "imgname": "img/animal/chicken.png",
             "title": "닭",
-            "food": "img/animal_like/seed.png"
+            "food": "img/animal_like/seed.png",
+            "explanation":"🌱밀 씨앗을 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 4,
             "imgname": "img/animal/pig.png",
             "title": "돼지",
-            "food": "img/animal_like/carrot.png"
+            "food": "img/animal_like/carrot.png",
+            "explanation":"🥕당근을 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 5,
             "imgname": "img/animal/wolf.png",
             "title": "강아지",
-            "food": "img/animal_like/meat.png"
+            "food": "img/animal_like/meat.png",
+            "explanation":"🥩고기를 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 6,
             "imgname": "img/animal/cat.png",
             "title": "고양이",
-            "food": "img/animal_like/fish.png"
+            "food": "img/animal_like/fish.png",
+            "explanation":"🍤익히지 않은 생선을 이용하여 관심을 끌 수 있습니다."
         },
         {
             "id": 7,
             "imgname": "img/animal/horse.png",
             "title": "말",
-            "food": "img/animal_like/glodApple.png"
+            "food": "img/animal_like/goldenApple.png",
+            "explanation":"🍎황금사과를 이용하여 관심을 끌 수 있습니다."
         }
     ]
 }

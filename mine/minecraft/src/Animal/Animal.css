@@ -44,8 +44,9 @@
     position:relative;
     width:100%;
     height:700px;
-    background:url('../images/animalBackground.jpg') 0 center / 500px 700px repeat-x;
-    animation: movebg 2s linear infinite;
+    background-color: #DDECCA;
+    /* background:url('../images/animalBackground.jpg') 0 center / 500px 700px repeat-x; */
+    /* animation: movebg 2s linear infinite; */
     /* 2초동안 일정하게 무한반복 */
     /* test.png */
 }
@@ -57,9 +58,9 @@
 
 .moving_animal {
     position:relative;
-    width:3500px;
+    width:3850px;
     height:300px;
-    animation: moveAn 2s linear infinite;
+    animation: moveAn 25s linear infinite;
     /* 2초동안 일정하게 무한반복 */
     /* test.png */
 }
@@ -70,19 +71,35 @@
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-500px);
+        transform: translateX(-3450px);
     }
 }
 
 .frame_ani{
-    width: 300px;
-    height: 500px;
-    background-color: darkviolet;
-    margin: 150px 100px 50px 100px;
+    width: 350px;
+    height: 600px;
+    background-color: #7DB249;
+    margin: 0px 100px 50px 100px;
     float: left;
+
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 12px 12px 5px 8px #71a1417a;
 }
 
 .animal_img{
-    width: 100%;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    margin: 100px 50px 50px 70px;
+}
+
+.food_img{
+    width: 100px;
+    height: 100px;
+    margin-left: 35%;
+}
+
+.animal_text{
+    text-align: center;
 }

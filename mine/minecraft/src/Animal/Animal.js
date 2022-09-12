@@ -22,8 +22,9 @@ const Animal = () =>{
                     {animal.Animal.map(ani =>(
                         <div key={ani.id} className="frame_ani">
                             <img src={process.env.PUBLIC_URL + ani.imgname} className="animal_img"/>
-                            <h4>{ani.title}</h4>
-                            <img src={process.env.PUBLIC_URL + ani.food}/>
+                            <h3 className="animal_text">" {ani.title} "</h3>
+                            <img src={process.env.PUBLIC_URL + ani.food} className="food_img"/>
+                            <h5 className="animal_text">{ani.explanation}</h5>
                         </div>
                     ))}
                 </div>
