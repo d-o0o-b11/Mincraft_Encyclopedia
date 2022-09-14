@@ -79,13 +79,14 @@
     width: 350px;
     height: 600px;
     background-color: #7DB249;
-    margin: 0px 100px 50px 100px;
+    /* margin: 0px 100px 50px 100px; */
+    margin-bottom: 50px;
     float: left;
 
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
-    box-shadow: 12px 12px 5px 8px #71a1417a;
+    box-shadow: 2px 2px 2px 2px #71a1417a;
 }
 
 .animal_img{
@@ -102,4 +103,52 @@
 
 .animal_text{
     text-align: center;
+}
+
+.container{
+    width: 300vw;
+    /* width: 400px; */
+    /* transform: translate(-100vw); */
+    /* x축 -100vw 이동 */
+    transition: transform 0.5s;
+    /* transform == 서서히 변경 */
+}
+
+.inner{
+    width: 100vw;
+    float: left;
+}
+
+.frame{
+    width:300px;
+    /* width: 100vw; */
+    height: 450px;
+    /* margin-left: 50px;  */
+}
+
+.wrap_frame2{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.slide_wrapper2{
+    /* 보이는 화면 960px까지만 나머지는 hidden */
+    position: relative;
+    /* width: 960px; */
+    width: 350px;
+    margin: 0 auto;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slides2{
+    position: absolute;
+    left:0;
+    top: 0;
+    /* width: 2610px; */
+    transition: transform 0.5s;
+}
+
+.frame_ani:not(:first-child){
+    margin-left: 100px; 
 }
