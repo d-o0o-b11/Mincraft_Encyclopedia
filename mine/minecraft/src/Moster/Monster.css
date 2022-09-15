@@ -1,17 +1,19 @@
 .background_mon{
     background-color: rgba(216, 176, 176, 0.349);
     /* background-image: url("") fixed; */
-    height: 500px;
+    height: 400px;
     margin: 50px 10px 50px 10px;
     border-radius: 10%;
     animation: slowAppear 1s ease-in;
+    text-align: center;
 }
 
 .photo_mon{
-    /* position: absolute; */
-    top:100px;
-    right: 200px;
-    width: 150px;
+    position: absolute;
+    top:200px;
+    right: 80px;
+    margin: 0 auto;
+    width: 180px;
 }
 
 /* .background_mon:nth-child(1){
@@ -22,6 +24,20 @@
     position: absolute;
     left:100px;
     /* animation: slidein 2s ease-out; */
+}
+
+.text_center{
+    /* margin: 0 auto;
+    margin-top: 100px; */
+    text-align: center;
+    top: 50px;
+    position: absolute;
+    left: 75px;
+}
+
+.text_color{
+    color: #828282;
+    font-size: 35px;
 }
 
 @keyframes slidein{
@@ -56,4 +72,65 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  /* ----------------------- */
+
+  .container2 {
+    height: 700px;
+    /*        부모의 자식 요소가 3차원의 애니메이션 효과를 가질때, 300px의 거리에서 보는 원근감을 줌*/
+    perspective: 500px;
+    margin: 10px 0 150px 0;
+    text-align: center;
+  }
+
+  .container2 :not(:first-child){
+    margin: 10px 0 150px 0;
+  }
+
+  .container2 .item {
+    width: 80%;
+    height: 700px;
+    border: 2px solid #828282;
+    /* border-radius: 10%; */
+    /* font-size: 35px; */
+    /*카드의 뒷면을 안보이게 처리-카드가 뒤집히면 뒷면이 안보임*/
+    backface-visibility: hidden;
+    transition: 1s;
+    margin-left: 10%;
+    background-color: rgba(216, 176, 176, 0.349);
+    /* padding: 10px 0 10px 0; */
+  }
+
+  .container2 .item.front {
+    /* 앞면 카드가 부유하게 되어, 뒷면 카드가 아래에서 위로 올라감 -> 요소 두개가 겹치게 됨*/
+    position: absolute;
+    /* 명시적으로 기본값 설정, 없어도 됨*/
+    transform: rotateY(0deg);
+    
+  }
+
+  .container2:hover .item.front {
+    transform: rotateY(180deg);
+  }
+
+  .container2 .item.back {
+    /*y축을 중심으로 -180도 회전*/
+    transform: rotateY(-180deg);
+  }
+
+  .container2:hover .item.back {
+    transform: rotateY(0deg);
+  }
+
+  .sm_text{
+    position: absolute;
+    left: 190px;
+    color: gray;
+    bottom: -84px;
+  }
+
+  .text_wid{
+    width: 250px;
+    line-height: 50px;
   }

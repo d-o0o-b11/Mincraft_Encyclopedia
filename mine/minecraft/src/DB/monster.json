@@ -3,78 +3,78 @@
         {
             "id": 1,
             "imgname": "img/monster/zombi.png",
-            "title": "좀비",
-            "explanation":"공격 사거리가 짧아서 도망 칠 수 있습니다.",
+            "title": "Zombie",
+            "explanation":"야생에서 흔히 볼수있는 기본 몬스터입니다. 공격 범위에 들어오면 다가옵니다. 공격 사거리가 짧은 편이므로 쉽게 도망치거나 처치할 수 있습니다.",
             "check": 1
         },
         {
             "id": 2,
             "imgname": "img/monster/skeleton.png",
-            "title": "스켈레톤",
-            "explanation":"활을 이용하여 원거리 공격을 합니다.",
+            "title": "Skeleton",
+            "explanation":"야생에서 흔히 볼수있는 기본 몬스터입니다. 공격 범위에 들어오면 다가옵니다. 활을 이용하여 원거리 공격을 합니다. 화살을 맞은 스켈레톤 끼리 싸우는 모습을 볼 수 있으며, 거미위에 올라타 화살을 쏘는 모습도 종종 볼 수 있습니다.",
             "check": 0
         },
         {
             "id": 3,
             "imgname": "img/monster/spider.png",
-            "title": "거미",
-            "explanation":"높은 곳으로 올라가 공격을 합니다..",
+            "title": "Spider",
+            "explanation":"높이에 무관하게 거미줄을 이용해서 올라가 공격합니다. 동굴 스포너에서 독거미가 리스폰됩니다. 이에 맞을 시 독 데미지를 입으며 우유를 마시면 해독 효과를 볼 수 있습니다.",
             "check": 1
         },
         {
             "id": 4,
             "imgname": "img/monster/bat.png",
-            "title": "박쥐",
+            "title": "Bat",
             "explanation":"어두운 동굴 속에서 지내며 공격력을 가지고 있지 않습니다.",
             "check": 0
         },
         {
             "id": 5,
             "imgname": "img/monster/silverfish.png",
-            "title": "좀벌레",
-            "explanation":"랜덤으로 돌 블록안에 숨어 있으며 이를 캘 시 나타납니다.",
+            "title": "SilverFish",
+            "explanation":"랜덤으로 돌 블록안에 숨어 있으며 이를 캘 시 평균 1~2마리가 동시에 나타납니다. 좀벌레가 들어있는 블록은 평범한 블록보다 캐는 속도가 더 오래걸립니다.",
             "check": 1
         },
         {
             "id": 6,
             "imgname": "img/monster/slime.png",
-            "title": "슬라임",
+            "title": "Slime",
             "explanation":"크기가 총 3가지 버전이 있으며 가장 작은 슬라임까지 사냥해야 완전히 처치할 수 있습니다.",
             "check": 0
         },
         {
             "id": 7,
             "imgname": "img/monster/pig_zombie.png",
-            "title": "돼지 좀비",
-            "explanation":"지옥에서만 볼 수 있으며 먼저 공격하지 않는 이상 공격하지 않습니다.",
+            "title": "Pig Zombie",
+            "explanation":"지옥에서만 볼 수 있으며 먼저 공격하지 않는 이상 공격하지 않습니다. 만약 데미지를 입힌다면 주변의 돼지 좀비들이 동시에 공격을 합니다.",
             "check": 1
         },
         {
             "id": 8,
             "imgname": "img/monster/blaze.png",
-            "title": "블레이즈",
-            "explanation":"공격시 화염구를 날리며 맞으면 밀려남과 동시에 데미지를 입습니다.",
+            "title": "Blaze",
+            "explanation":"지옥에서만 볼 수 있으며 공격시 화염구를 날리며 맞으면 밀려남과 동시에 데미지를 입습니다. 또한, 스포너에서만 소환이 되는 몬스터입니다.",
             "check": 0
         },
         {
             "id": 9,
             "imgname": "img/monster/ender.png",
-            "title": "엔더",
-            "explanation":"순간이동을 하며 블록을 훔쳐갑니다. 눈을 마주치지 않는 이상 먼저 공격하지 않습니다.",
+            "title": "Ender",
+            "explanation":"순간이동을 하며 블록을 훔쳐갑니다. 눈을 마주치지 않는 이상 먼저 공격하지 않습니다. 엔더는 물을 무서워하며 위급상황 시 물을 설치하시면 됩니다.",
             "check": 1
         },
         {
             "id": 10,
             "imgname": "img/monster/dragon.png",
-            "title": "드래곤",
-            "explanation":"기둥 위의 심장을 파괴한 후 드래곤을 가격하면 쉽게 잡을 수 있습니다.",
+            "title": "Dragon",
+            "explanation":"엔드 중앙 섬에 가면 볼 수 있는 몬스터입니다. 기둥 위의 심장을 파괴한 후 드래곤을 가격하면 쉽게 잡을 수 있습니다.",
             "check": 0
         },
         {
             "id": 11,
             "imgname": "img/monster/wither.png",
-            "title": "위더",
-            "explanation":"하늘을 날며 물건을 던져 폭발 데미지를 입힐 수 있으며 돌진 공격 또한 가능합니다.",
+            "title": "Wither",
+            "explanation":"평소에는 볼 수 없는 몬스터이며 소환을 해야지만 볼 수 있습니다. 하늘을 날며 물건을 던져 폭발 데미지를 입힐 수 있으며 돌진 공격 또한 가능합니다.",
             "check": 1
         }
         
