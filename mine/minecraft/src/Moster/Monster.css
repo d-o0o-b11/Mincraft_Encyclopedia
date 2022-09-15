@@ -1,0 +1,59 @@
+.background_mon{
+    background-color: rgba(216, 176, 176, 0.349);
+    /* background-image: url("") fixed; */
+    height: 500px;
+    margin: 50px 10px 50px 10px;
+    border-radius: 10%;
+    animation: slowAppear 1s ease-in;
+}
+
+.photo_mon{
+    /* position: absolute; */
+    top:100px;
+    right: 200px;
+    width: 150px;
+}
+
+/* .background_mon:nth-child(1){
+    top:500px;
+} */
+
+.text_an{
+    position: absolute;
+    left:100px;
+    /* animation: slidein 2s ease-out; */
+}
+
+@keyframes slidein{
+    from{
+        left:-150px;
+        opacity: 0;
+        /* 투명도 */
+    }
+    to{
+        left:100px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideout{
+    from{
+        left:100px;
+        opacity: 1;
+    }
+    to{
+        left:-150px;
+        opacity: 0;
+    }
+}
+
+@keyframes slowAppear {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

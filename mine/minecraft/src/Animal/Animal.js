@@ -53,18 +53,6 @@ const Animal = () =>{
                 </div>
             </div>
 
-            {/* <div className="moving">
-                <div className="moving_animal">
-                    {animal.Animal.map(ani =>(
-                        <div key={ani.id} className="frame_ani">
-                            <img src={process.env.PUBLIC_URL + ani.imgname} className="animal_img"/>
-                            <h3 className="animal_text">" {ani.title} "</h3>
-                            <img src={process.env.PUBLIC_URL + ani.food} className="food_img"/>
-                            <h4 className="animal_text">{ani.explanation}</h4>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
             <div className="slide_wrapper2 "> 
                 <div className="slides2">
                 <div className="wrap_frame2">

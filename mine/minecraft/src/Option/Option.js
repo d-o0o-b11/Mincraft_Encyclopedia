@@ -4,12 +4,15 @@ import logo from "../images/logo.png"
 import Craftingtable from "../images/Crafting table.png"
 import Monster from "../images/monster.jpg"
 import Sheep from "../images/sheep.png"
-import { Link } from 'react-router-dom';
 
 const Option = () => {
 
 const nextpage = () =>{
     window.location.href="/Craftingtable"
+}
+
+const nextpage2 = () =>{
+    window.location.href = "/Monster"
 }
 
 const nextpage3 = () =>{
@@ -35,7 +38,7 @@ return(
         </div>
     </div>
 
-        <div className="option_box_left">
+        <div className="option_box_left" onClick={nextpage2}>
             <div className="boxframe">
                 <img src={Monster} className="boximg"></img>
             </div>

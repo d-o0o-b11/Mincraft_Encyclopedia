@@ -4,6 +4,7 @@ import Main from "./Mainpage/Main"
 import Option from "./Option/Option"
 import Craftingtable from "./Craftingtable/Craftingtable"
 import Animal from "./Animal/Animal"
+import Monster from "./Moster/Monster"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () =>{
@@ -19,6 +20,7 @@ const App = () =>{
         <Route path="/option" element={<Option/>}/>
         <Route path="/Craftingtable" element={<Craftingtable/>}/>
         <Route path="/Animal" element={<Animal/>}/>
+        <Route path="/Monster" element={<Monster/>}/>
       </Routes>
 
 

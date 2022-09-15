@@ -68,6 +68,7 @@
     border-bottom-right-radius: 100px;
     padding: 20px 10px;
     animation: slowAppear 1s;
+    cursor: pointer;
 }
 
 .add_explanation{
