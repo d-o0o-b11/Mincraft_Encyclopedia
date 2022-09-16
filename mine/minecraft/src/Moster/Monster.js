@@ -21,6 +21,7 @@ const Monster = () => {
 
     return(
         <>
+        <div className="fixed_header">
             <div className="subheading2">
                 <div className="sub_boxframe">
                     <img src={MonsterImg} className="sub_boximg"></img>
@@ -29,7 +30,9 @@ const Monster = () => {
                     <h5 style={{margin: " 0px 0px 0px 30px"}}>다양한 몬스터 종류를 확인해보세요!</h5>
                 </div>
             </div>
+        </div>
 
+<div className="frame_body">
             {monster.Monster.map(mon =>(
                         <div key={mon.id} className="container2">
                                     <div className="item front">
@@ -42,6 +45,7 @@ const Monster = () => {
                                     </div>
                         </div>
                     ))}
+    </div>
         
         {/* <div className="container2">
             <div className="item front">

@@ -27,16 +27,16 @@
 }
 
 .text_center{
-    /* margin: 0 auto;
-    margin-top: 100px; */
+    margin: 0 auto;
+    margin-top: 100px;
     text-align: center;
-    top: 50px;
+    /* top: 50px;
     position: absolute;
-    left: 75px;
+    left: 75px; */
 }
 
 .text_color{
-    color: #828282;
+    color: #568A35;
     font-size: 35px;
 }
 
@@ -78,6 +78,8 @@
 
   .container2 {
     height: 700px;
+    width: 350px;
+    /* width값에 따라 마우스 올리면 뒤집힘 */
     /*        부모의 자식 요소가 3차원의 애니메이션 효과를 가질때, 300px의 거리에서 보는 원근감을 줌*/
     perspective: 500px;
     margin: 10px 0 150px 0;
@@ -89,16 +91,16 @@
   }
 
   .container2 .item {
-    width: 80%;
+    width: 330px;
     height: 700px;
-    border: 2px solid #828282;
+    border: 2px solid #7DB249;
     /* border-radius: 10%; */
     /* font-size: 35px; */
     /*카드의 뒷면을 안보이게 처리-카드가 뒤집히면 뒷면이 안보임*/
     backface-visibility: hidden;
     transition: 1s;
     margin-left: 10%;
-    background-color: rgba(216, 176, 176, 0.349);
+    background-color: #AFD485;
     /* padding: 10px 0 10px 0; */
   }
 
@@ -133,4 +135,18 @@
   .text_wid{
     width: 250px;
     line-height: 50px;
+  }
+
+  .fixed_header{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .frame_body{
+    padding-top: 120px;
+    z-index: 5;
   }
