@@ -54,7 +54,7 @@ const Weapon = () =>{
                                     <div key={weapon.id} className="img_center">
                                         <img src={process.env.PUBLIC_URL + weapon.imgname} className="img_center"/>
                                         <h4>{weapon.title}</h4>
-                                        <h6>{weapon.explanation}</h6>
+                                        <h5>{weapon.explanation}</h5>
                                     </div>
                                 </div>
                             </div>

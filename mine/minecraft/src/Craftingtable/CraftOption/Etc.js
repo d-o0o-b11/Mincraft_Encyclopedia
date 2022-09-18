@@ -71,7 +71,7 @@ const Etc = () =>{
                                     <div key={etc.id} className="img_center">
                                         <img src={process.env.PUBLIC_URL + etc.imgname} className="img_center"/>
                                         <h4>{etc.title}</h4>
-                                        <h6>{etc.explanation}</h6>
+                                        <h5>{etc.explanation}</h5>
                                     </div>
                                 </div>
                             </div>

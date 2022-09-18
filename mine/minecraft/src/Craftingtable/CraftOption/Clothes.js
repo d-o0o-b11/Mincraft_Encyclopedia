@@ -54,7 +54,7 @@ const Clothes = () =>{
                                     <div key={clothes.id} className="img_center">
                                         <img src={process.env.PUBLIC_URL + clothes.imgname} className="img_center"/>
                                         <h4>{clothes.title}</h4>
-                                        <h6>{clothes.explanation}</h6>
+                                        <h5>{clothes.explanation}</h5>
                                     </div>
                                 </div>
                             </div>
